@@ -12,7 +12,7 @@ Wymagania:
 
 ## Autorzy 
 
-Warsztaty przygotwane na [Warszawskie Dni Informatyki 2017](http://www.warszawskiedniinformatyki.pl/): 
+Warsztaty przygotwane na [Warszawskie Dni Informatyki 2017](http://www.warszawskiedniinformatyki.pl/) (28 marca 2017)
 
 Autorzy:
 * Marcin Kowalczyk
