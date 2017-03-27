@@ -20,6 +20,6 @@ Autorzy:
 * Marta Kisielińska
 * Kamil Chaciak
 
-Koło Naukowe Programistów, Instytutu Informatyki, Uniwersytet Przyrodniczo-Humanistyczny w Siedlcach
+Koło Naukowe Programistów, Instytut Informatyki, Uniwersytet Przyrodniczo-Humanistyczny w Siedlcach
 
 
