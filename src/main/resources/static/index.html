@@ -12,8 +12,48 @@
 <body ng-controller="myController">
 	<h1>Biblioteka</h1>
 
+	{{ hello }}
+	{{ myFun() }}
+	{{ books[0].author }}
+	
+	<div ng-if="search!=''">{{search}}</div>
+	
+	<button ng-click='addBook({title: "Test ksiega 3", 
+				author: "Adam Adamek", 
+				description: "przykladowy abstrakt edit"})'>Add</button>
 
-
+	<button ng-click='deleteBook(1)'>Del</button>
+	
+	<table>
+	 <thead>
+		<th ng-click="sortBy('id')"> ID </th>
+		<th ng-click="sortBy('title')"> Title </th>
+		<th ng-click="sortBy('author')"> Author </th>
+		<th ng-click="sortBy('description')"> Description </th>
+	 </thead>
+	 
+	 <tbody>
+	 	<tr ng-repeat = "book in books | orderBy:orderBy | filter:searchFor()">
+	 		<td> {{book.id}} </td>
+	 		<td> {{book.title}} </td>
+	 		<td> {{book.author}} </td>
+	 		<td> {{book.description}} </td>
+	 		<td ng-click="deleteBook(book.id)">delete	</td>
+	 	</tr>
+	 	
+	 	<tr>
+			<td></td>
+			<td> <input ng-model="newBook.title"/> </td>	 	
+	 		<td> <input ng-model="newBook.author"/> </td>	
+	 		<td> <input ng-model="newBook.description"/> </td>	
+	 		<td> <button ng-click="addBook(newBook)" >Add </button> </td>
+	 	
+	 	</tr>
+	 	
+	 </tbody>
+	</table>
+	
+	<input ng-model="search"/>
 	
 </body>
 </html>
